@@ -8,9 +8,9 @@ public class menu : MonoBehaviour
         SceneManager.LoadScene("");
         Debug.Log("ppppew");
     }
-    public void ExitGame()
+    public void QuitGame()
     {
         Application.Quit();
-        Debug.Log("exit");
+        Debug.Log("quit");
     }
 }

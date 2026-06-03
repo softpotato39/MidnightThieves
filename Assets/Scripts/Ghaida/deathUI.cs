@@ -1,23 +1,22 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class inGameUI : MonoBehaviour
+
+public class deathUI : MonoBehaviour
 {
     public void QuitGame()
     {
         Application.Quit();
         Debug.Log("quit");
     }
+
     public void LoadMainMenu()
     {
         SceneManager.LoadScene("");
         Debug.Log("ppppew");
     }
-    public void PauseGame()
+    public void TryAgain()
     {
-        Time.timeScale = 0f;
-    }
-    public void ResumeGame()
-    {
-        Time.timeScale = 1f;
+        SceneManager.LoadScene("");
+        Debug.Log("waaaaaaaaaaak");
     }
 }
