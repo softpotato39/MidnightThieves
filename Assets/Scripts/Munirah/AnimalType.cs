@@ -4,7 +4,7 @@ public enum AnimalType
 {
     Raccoon,
     Tiger,
-    Bear,
+    Crocodile,
     zebra
 
 }

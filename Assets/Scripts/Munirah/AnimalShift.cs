@@ -6,7 +6,7 @@ public class AnimalShift : MonoBehaviour
 {
     public GameObject raccoonModel;
     public GameObject tigerModel;
-    public GameObject bearModel;
+    public GameObject crocodileModel;
     public GameObject zebraModel;
 
     public AnimalType currentAnimal = AnimalType.Raccoon;
@@ -50,8 +50,9 @@ public class AnimalShift : MonoBehaviour
     {
         raccoonModel.SetActive(false);
         tigerModel.SetActive(false);
-        bearModel.SetActive(false);
+        crocodileModel.SetActive(false);
         zebraModel.SetActive(false);
+       
 
         switch (currentAnimal)
         {
@@ -63,8 +64,8 @@ public class AnimalShift : MonoBehaviour
                 tigerModel.SetActive(true);
                 break;
 
-            case AnimalType.Bear:
-                bearModel.SetActive(true);
+            case AnimalType.Crocodile:
+                crocodileModel.SetActive(true);
                 break;
 
             case AnimalType.zebra:
