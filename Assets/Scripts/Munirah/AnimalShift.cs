@@ -45,7 +45,7 @@ public class AnimalShift : MonoBehaviour
             Debug.Log(animal + " unlocked!");
         }
     }
-
+   
     private void UpdateModel()
     {
         raccoonModel.SetActive(false);
@@ -79,4 +79,5 @@ public class AnimalShift : MonoBehaviour
             Shift();
       
     }
+    
 }
