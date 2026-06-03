@@ -7,6 +7,7 @@ public class AnimalNPC : MonoBehaviour
     public Transform player;
 
     private AnimalShift playerAnimal;
+    public bool isAggressive = true;
 
     private void Start()
     {
@@ -16,6 +17,9 @@ public class AnimalNPC : MonoBehaviour
 
     private void Update()
     {
+        if (!isAggressive)
+            return;
+
         if (playerAnimal.currentAnimal != animalType)
         {
             transform.LookAt(player);
@@ -25,6 +29,19 @@ public class AnimalNPC : MonoBehaviour
                     transform.position,
                     player.position,
                     3f * Time.deltaTime);
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            PlayerHealth health =
+                other.GetComponent<PlayerHealth>();
+
+            if (health != null)
+            {
+                health.TakeDamage(5);
+            }
         }
     }
 }
