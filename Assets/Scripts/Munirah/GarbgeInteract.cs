@@ -36,7 +36,7 @@ public class GarbageInteract : MonoBehaviour
             if (tirednessMeter != null &&
                 tirednessMeter.currentTiredness >= requiredTiredness)
             {
-                animator.SetTrigger("Dig");
+                animator.SetBool("Dig", true);
 
                 Invoke(nameof(LoadNextScene), 2f);
 

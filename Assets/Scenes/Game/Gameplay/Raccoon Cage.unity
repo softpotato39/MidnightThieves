@@ -8801,7 +8801,7 @@ Transform:
   m_GameObject: {fileID: 390955249}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 493.6345, y: 19.77, z: 505.8085}
+  m_LocalPosition: {x: 493.85706, y: 20.77, z: 501.8075}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10483,6 +10483,11 @@ Transform:
 --- !u!1 &466779244 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8815465532549758410, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
+  m_PrefabInstance: {fileID: 1592370004}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &466779246 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2984242957677846125, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
   m_PrefabInstance: {fileID: 1592370004}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &471083633
@@ -20414,7 +20419,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: db995cb75393f3c4ba3e304f9a0ef546, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -23297,7 +23302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Digging
   animator: {fileID: 1107562757}
   tirednessMeter: {fileID: 1107562758}
-  suspiciousMeter: {fileID: 0}
+  suspiciousMeter: {fileID: 629069053}
   animalShift: {fileID: 1107562759}
 --- !u!95 &1107562757 stripped
 Animator:
@@ -23317,7 +23322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TirednessMeter
   currentTiredness: 0
-  maxTiredness: 100
+  maxTiredness: 30
 --- !u!114 &1107562759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32847,15 +32852,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 494.69745
+      value: 494.92
       objectReference: {fileID: 0}
     - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 19.77
+      value: 20.77
       objectReference: {fileID: 0}
     - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 505.04102
+      value: 501.04
       objectReference: {fileID: 0}
     - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -32908,6 +32913,10 @@ PrefabInstance:
     - target: {fileID: 2070925441746177913, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
       propertyPath: m_StreamingVersion
       value: 20241001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070925442191277752, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
+      propertyPath: VerticalArmLength
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -35886,9 +35895,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0470d39f03cca12438383dadff48b581, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GarbageInteract
-  requiredTiredness: 30
+  requiredTiredness: 5
   sceneToLoad: Zebra Cage
-  animator: {fileID: 1107562757}
+  animator: {fileID: 466779246}
 --- !u!1001 &1647360569
 PrefabInstance:
   m_ObjectHideFlags: 0
