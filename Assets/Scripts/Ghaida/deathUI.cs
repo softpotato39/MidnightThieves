@@ -11,7 +11,7 @@ public class deathUI : MonoBehaviour
 
     public void LoadMainMenu()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("Main Menu");
         Debug.Log("ppppew");
     }
     public void TryAgain()
