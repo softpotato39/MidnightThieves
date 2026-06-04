@@ -19,13 +19,7 @@ public class GuardAI : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            PlayerHealth health =
-                other.GetComponent<PlayerHealth>();
-
-            if (health != null)
-            {
-                health.TakeDamage(5);
-            }
+            Debug.Log("Game Over");
         }
     }
     void Update()
