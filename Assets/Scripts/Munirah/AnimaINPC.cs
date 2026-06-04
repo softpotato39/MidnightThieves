@@ -35,13 +35,10 @@ public class AnimalNPC : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            PlayerHealth health =
-                other.GetComponent<PlayerHealth>();
+           
+                other.GetComponent<PlayerHealth>()?.TakeDamage(5);
 
-            if (health != null)
-            {
-                health.TakeDamage(5);
-            }
+           
         }
     }
 }

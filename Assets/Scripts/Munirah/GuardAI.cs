@@ -16,7 +16,10 @@ public class GuardAI : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Game Over");
+
+            other.GetComponent<PlayerHealth>()?.TakeDamage(20);
+
+
         }
     }
     void Update()

@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public class Digging : MonoBehaviour
 {
     public Animator animator;
-    public TirednessMeter tirednessMeter;
+    
     
     public AnimalShift animalShift;
     private bool isDigging;
@@ -22,11 +22,6 @@ public class Digging : MonoBehaviour
         if (animalShift.currentAnimal != AnimalType.Raccoon)
             return;
 
-        if (isDigging)
-        {
-            tirednessMeter.AddTiredness(5f * Time.deltaTime);
-
         
-        }
     }
 }
