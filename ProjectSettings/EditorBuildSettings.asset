@@ -9,11 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/Majd/T-MajdTests.unity
-    guid: 4c39c7bfe665a7346b91bb93a7145882
+    path: Assets/Scenes/Ghaida/Main Menu.unity
+    guid: a6e6d7ee9323ef24e95b47f3433d5c5d
   - enabled: 1
-    path: Assets/Scenes/Munirah/T-MunirahTests.unity
-    guid: 4879d8538170e1a459e85aef5d246f77
+    path: Assets/Scenes/Ghaida/Win Scene.unity
+    guid: 477ed18ff0161da4ab281dbf01afede1
+  - enabled: 1
+    path: Assets/Scenes/Ghaida/Death Scene.unity
+    guid: 17eb00db77195974f9293893933820b2
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
