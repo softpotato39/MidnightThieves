@@ -4,18 +4,13 @@ using UnityEngine.SceneManagement;
 public class SceneTransition : MonoBehaviour
 {
     public string sceneToLoad;
-
-    public int checkpointID;
-
     private bool playerInside = false;
 
     private void Update()
     {
         if (playerInside && Input.GetKeyDown(KeyCode.E))
         {
-            CheckpointManager.Instance.SaveCheckpoint(
-                checkpointID
-            );
+          
 
             SceneManager.LoadScene(
                 sceneToLoad
