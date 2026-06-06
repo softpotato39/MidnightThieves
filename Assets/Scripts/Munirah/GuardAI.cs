@@ -4,12 +4,9 @@ using UnityEngine.AI;
 public class GuardAI : MonoBehaviour
 {
     public Transform player;
-
-    public SuspiciousMeter suspiciousMeter;
-
     private NavMeshAgent agent;
 
-    private bool chasing = false;
+   
 
     void Start()
     {
@@ -19,22 +16,16 @@ public class GuardAI : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Game Over");
+
+            other.GetComponent<PlayerHealth>()?.TakeDamage(20);
+
+
         }
     }
     void Update()
     {
-        if (!chasing &&
-            suspiciousMeter.IsMaxSuspicion())
-        {
-            chasing = true;
-        }
+       agent.SetDestination(player.position);
 
-        if (chasing)
-        {
-            agent.SetDestination(
-                player.position
-            );
-        }
+        
     }
 }

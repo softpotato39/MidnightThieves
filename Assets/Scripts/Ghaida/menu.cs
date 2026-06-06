@@ -5,7 +5,7 @@ public class menu : MonoBehaviour
 {
    public void PlayGame()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("Raccoon Cage");
         Debug.Log("ppppew");
     }
     public void QuitGame()

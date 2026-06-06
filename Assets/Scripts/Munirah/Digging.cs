@@ -4,13 +4,14 @@ using UnityEngine.InputSystem;
 public class Digging : MonoBehaviour
 {
     public Animator animator;
-    public TirednessMeter tirednessMeter;
-    public SuspiciousMeter suspiciousMeter;
+    
+    
     public AnimalShift animalShift;
     private bool isDigging;
 
-    public void OnDig(UnityEngine.InputSystem.InputAction.CallbackContext context)
+    public void OnInteract(InputAction.CallbackContext context)
     {
+        Debug.Log("working");
         isDigging = context.ReadValueAsButton();
 
         animator.SetBool("Dig", isDigging);
@@ -21,12 +22,6 @@ public class Digging : MonoBehaviour
         if (animalShift.currentAnimal != AnimalType.Raccoon)
             return;
 
-        if (isDigging)
-        {
-            tirednessMeter.AddTiredness(5f * Time.deltaTime);
-
-            if (suspiciousMeter != null)
-                suspiciousMeter.AddSuspicion(10f * Time.deltaTime);
-        }
+        
     }
 }

@@ -16,7 +16,7 @@ public class deathUI : MonoBehaviour
     }
     public void TryAgain()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("Raccoon Cage");
         Debug.Log("waaaaaaaaaaak");
     }
 }

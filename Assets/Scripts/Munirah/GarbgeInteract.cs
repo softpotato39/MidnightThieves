@@ -3,18 +3,18 @@ using UnityEngine.SceneManagement;
 
 public class GarbageInteract : MonoBehaviour
 {
-    public float requiredTiredness = 50f;
+    public GameObject intUI;
     public string sceneToLoad;
     public Animator animator;
     private bool playerInside;
-    private TirednessMeter tirednessMeter;
+  
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             playerInside = true;
-            tirednessMeter = other.GetComponent<TirednessMeter>();
+            intUI.SetActive(true);
         }
     }
 
@@ -23,7 +23,7 @@ public class GarbageInteract : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInside = false;
-            tirednessMeter = null;
+          intUI.SetActive(false);
         }
     }
 
@@ -33,14 +33,12 @@ public class GarbageInteract : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (tirednessMeter != null &&
-                tirednessMeter.currentTiredness >= requiredTiredness)
-            {
-                animator.SetTrigger("Dig");
+          
+                animator.SetBool("Dig", true);
 
                 Invoke(nameof(LoadNextScene), 2f);
 
-            }
+            
         }
 
     }

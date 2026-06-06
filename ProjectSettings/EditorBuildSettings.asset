@@ -15,6 +15,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Ghaida/Win Scene.unity
     guid: 477ed18ff0161da4ab281dbf01afede1
   - enabled: 1
+    path: Assets/Scenes/Game/Gameplay/Raccoon Cage.unity
+    guid: 9ae0c7d3a2ea1f24baf7c7f7a9bf8000
+  - enabled: 1
+    path: Assets/Scenes/Game/Gameplay/Zebra Cage.unity
+    guid: a5b8a134cad514f4b8cf5a1cf3a845ef
+  - enabled: 1
+    path: Assets/Scenes/Game/Gameplay/Croc Cage.unity
+    guid: fdcacd72112f2834c8b0a8e543b7ca26
+  - enabled: 1
+    path: Assets/Scenes/Game/Gameplay/Tiger Cage.unity
+    guid: 12b6a37c835da9046b8ce08515db0337
+  - enabled: 1
+    path: Assets/Scenes/Game/Gameplay/RUN.unity
+    guid: 318df129e937da142bd7c720d7f7705b
+  - enabled: 1
     path: Assets/Scenes/Ghaida/Death Scene.unity
     guid: 17eb00db77195974f9293893933820b2
   m_configObjects:

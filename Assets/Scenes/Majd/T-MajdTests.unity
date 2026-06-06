@@ -792,7 +792,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!23 &592937135
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1373,7 +1373,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100154, guid: 765e2fde8c84f094e99304c6198491ea, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400154, guid: 765e2fde8c84f094e99304c6198491ea, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2098,7 +2098,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0f77072bcf4d940729de7c32600ad030, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3093982758640744619, guid: 0f77072bcf4d940729de7c32600ad030, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -2678,16 +2678,16 @@ SceneRoots:
   - {fileID: 643350512}
   - {fileID: 161542364}
   - {fileID: 1403995231}
-  - {fileID: 191387673}
   - {fileID: 1392014051}
   - {fileID: 592937137}
   - {fileID: 1072828460}
   - {fileID: 1830098142}
+  - {fileID: 191387673}
   - {fileID: 521623849}
   - {fileID: 208677226}
+  - {fileID: 148104112}
   - {fileID: 587570947}
   - {fileID: 1591131406}
   - {fileID: 2066748754}
   - {fileID: 1950399636}
   - {fileID: 1289496909}
-  - {fileID: 148104112}

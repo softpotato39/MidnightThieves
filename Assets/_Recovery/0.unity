@@ -333,14 +333,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 19883094925346136, guid: 5698d8e7023922e49af79e6b8a79cc3a, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1961457537}
-    - target: {fileID: 19883094925346136, guid: 5698d8e7023922e49af79e6b8a79cc3a, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PlayGame
-      objectReference: {fileID: 0}
     - target: {fileID: 1204124971985655804, guid: 5698d8e7023922e49af79e6b8a79cc3a, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -421,30 +413,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4153490595178774009, guid: 5698d8e7023922e49af79e6b8a79cc3a, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4153490595178774009, guid: 5698d8e7023922e49af79e6b8a79cc3a, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4153490595178774009, guid: 5698d8e7023922e49af79e6b8a79cc3a, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4153490595178774009, guid: 5698d8e7023922e49af79e6b8a79cc3a, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4153490595178774009, guid: 5698d8e7023922e49af79e6b8a79cc3a, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 4153490595178774009, guid: 5698d8e7023922e49af79e6b8a79cc3a, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 56
-      objectReference: {fileID: 0}
     - target: {fileID: 4607291660681352337, guid: 5698d8e7023922e49af79e6b8a79cc3a, type: 3}
       propertyPath: m_Name
       value: Main menu UI
@@ -454,17 +422,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5698d8e7023922e49af79e6b8a79cc3a, type: 3}
---- !u!114 &1961457537 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8050910885051811437, guid: 5698d8e7023922e49af79e6b8a79cc3a, type: 3}
-  m_PrefabInstance: {fileID: 1874076667}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b42566ca61e20f0408e1e3d693b5547b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::menu
 --- !u!1 &2051002896
 GameObject:
   m_ObjectHideFlags: 0
